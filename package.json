@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node server/index.js"
-},
+    "start": "node server/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SunSirHC/todo-list.git"
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/SunSirHC/todo-list#readme",
   "dependencies": {
     "@koa/router": "^8.0.8",
+    "azure-storage": "^2.10.3",
     "koa": "^2.11.0",
     "koa-static": "^5.0.0"
   }
