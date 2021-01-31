@@ -72,7 +72,7 @@ const listTasks = async () => {
 
         const actions = document.createElement('td')
         actions.classList.add('has-text-right')
-        actions.innerHTML = `<button class="button is-small is-primary" id="deleteTask${task.id}" onclick="completeTask('${task.id}');"><span class="icon is-small"><i class="fa fa-check" style="font-size:48px;color:red"></i></span></button>`
+        actions.innerHTML = `<button class="button is-small is-primary" id="deleteTask${task.id}" onclick="completeTask('${task.id}');"><span class="icon is-small"><i class="fa fa-check" style="font-size:24px;color:blue"></i></span></button>`
 
         const row = document.createElement('tr')
         row.appendChild(title)
