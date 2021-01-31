@@ -32,14 +32,14 @@ addTaskForm.addEventListener('submit', (event) => {
         throw Error(response.statusText)
       }
 
-      addTaskMsg.textContent = 'Pomyślnie dodano zadanie.'
+      addTaskMsg.textContent = 'Pomyślnie dodano notatke'
       addTaskMsg.classList.add('is-success')
       addTaskTitle.value = ''
 
       listTasks()
     })
     .catch(() => {
-      addTaskMsg.textContent = 'Wystąpił błąd podczas dodawania zadania. Spróbuj ponownie później.'
+      addTaskMsg.textContent = 'Wystąpił błąd podczas dodawania notatki. Spróbuj ponownie!'
       addTaskMsg.classList.add('is-danger')
     })
     .finally(() => {
