@@ -82,7 +82,7 @@ const listTasks = async () => {
       })
     })
     .catch(() => {
-      tasksListMsg.textContent = 'Wystąpił błąd podczas pobierania listy zadań. Spróbuj ponownie później.'
+      tasksListMsg.textContent = 'Wystąpił błąd podczas pobierania listy notatek. Spróbuj ponownie później.'
       tasksListMsg.classList.add('is-danger')
     })
 }
@@ -103,14 +103,14 @@ const completeTask = (id) => {
           throw Error(response.statusText)
         }
 
-        tasksListMsg.textContent = 'Pomyślnie usunięto zadanie.'
+        tasksListMsg.textContent = 'Pomyślnie usunięto notatke'
         tasksListMsg.classList.add('is-success')
 
         listTasks()
       })
       .catch(() => {
         button.classList.remove('is-loading')
-        tasksListMsg.textContent = 'Wystąpił błąd podczas usuwania zadania. Spróbuj ponownie później.'
+        tasksListMsg.textContent = 'Wystąpił błąd podczas usuwania notatki. Spróbuj ponownie później.'
         tasksListMsg.classList.add('is-danger')
       })
       .finally(() => {
